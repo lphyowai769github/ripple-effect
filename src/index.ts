@@ -1,7 +1,6 @@
 interface RippleEffectConfig {
     bounded?: boolean | undefined | null;
     color?: string | undefined | null;
-    radius?: number | undefined | null;
     opacity?: number | undefined | null;
     enterDuration?: number | undefined | null;
     exitDuration?: number | undefined | null;
@@ -12,7 +11,6 @@ class RippleEffect {
 
     private _bounded: boolean = true;
     private _color: string = "currentcolor";
-    private _radius: number = 1;
     private _opacity: number = 0.2;
 
     public enterDuration: number = 400;
@@ -26,9 +24,6 @@ class RippleEffect {
             }
             if (config.color != undefined) {
                 this.color = config.color;
-            }
-            if (config.radius != undefined) {
-                this.radius = config.radius;
             }
             if (config.opacity != undefined) {
                 this.opacity = config.opacity;
@@ -60,14 +55,6 @@ class RippleEffect {
 
     set color(value: string) {
         this._color = value.trim() || "currentcolor";
-    }
-
-    get radius(): number {
-        return this._radius;
-    }
-
-    set radius(value: number) {
-        this._radius = Math.min(Math.max(0, value), 1);
     }
 
     get opacity(): number {
@@ -140,7 +127,7 @@ class RippleEffect {
             top: ${y}px;
             width: ${r * 2}px;
             height: ${r * 2}px;
-            border-radius: ${this.radius * 50}%;
+            border-radius: 50%;
             background-color: ${this.color};
             transform: translate(-50%, -50%) scale(0);
             transition: transform ${this.enterDuration}ms ease, opacity ${this.enterDuration / 4}ms linear;
