@@ -1,11 +1,15 @@
 {
-  "name": "ripple-effect",
+  "name": "@hugy/ripple-effect",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple, flexible and lightweight material style ripple effect",
   "main": "./dist/commonjs/index.js",
   "module": "./dist/module/index.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:commonjs": "tsc --outDir dist/commonjs",
+    "build:module": "tsc --outDir dist/commonjs",
+    "build:types": "tsc --outDir dist/types --emitDeclarationOnly --declaration"
   },
   "keywords": [],
   "author": "",
