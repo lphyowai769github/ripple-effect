@@ -6,8 +6,8 @@
   "module": "./dist/module/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "build:commonjs": "tsc --outDir dist/commonjs",
+    "build": "npm run build:commonjs & npm run build:module & npm run build:types",
+    "build:commonjs": "tsc --outDir dist/commonjs --module commonjs",
     "build:module": "tsc --outDir dist/commonjs",
     "build:types": "tsc --outDir dist/types --emitDeclarationOnly --declaration"
   },
