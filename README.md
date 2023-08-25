@@ -22,6 +22,8 @@ const rippleEffect = new RippleEffect(el);
 
 ```
 
+Note: CSS position of target element must be one of these (relative, absolute, fixed, sticky).
+
 ## properties
 
 #### bounded (type: boolean)
