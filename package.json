@@ -1,6 +1,6 @@
 {
   "name": "@hugy/ripple-effect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "github.com/luccy2/ripple-effect",
   "description": "Simple, flexible and lightweight material style ripple effect",
   "main": "./dist/commonjs/index.js",
@@ -12,7 +12,10 @@
     "build:module": "tsc --outDir dist/commonjs",
     "build:types": "tsc --outDir dist/types --emitDeclarationOnly --declaration"
   },
-  "keywords": ["ripple", "material"],
+  "keywords": [
+    "ripple",
+    "material"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
