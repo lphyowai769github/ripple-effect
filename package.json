@@ -7,9 +7,10 @@
   "module": "./dist/module/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "npm run build:commonjs & npm run build:module & npm run build:types",
+    "build": "npm run build:commonjs & npm run build:module & npm run build:types && npm run build:browser",
     "build:commonjs": "tsc --outDir dist/commonjs --module commonjs",
     "build:module": "tsc --outDir dist/module",
+    "build:browser": "npx webpack --mode=production",
     "build:types": "tsc --outDir dist/types --emitDeclarationOnly --declaration"
   },
   "keywords": [
