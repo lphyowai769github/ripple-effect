@@ -1,6 +1,6 @@
 {
   "name": "@hugy/ripple-effect",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "github.com/luccy2/ripple-effect",
   "description": "Simple, flexible and lightweight material style ripple effect",
   "main": "./dist/commonjs/index.js",
