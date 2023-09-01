@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npm run build:commonjs & npm run build:module & npm run build:types",
     "build:commonjs": "tsc --outDir dist/commonjs --module commonjs",
-    "build:module": "tsc --outDir dist/commonjs",
+    "build:module": "tsc --outDir dist/module",
     "build:types": "tsc --outDir dist/types --emitDeclarationOnly --declaration"
   },
   "keywords": [
