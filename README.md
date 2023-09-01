@@ -4,7 +4,12 @@ This package adds material style ripple effect to HTML element.
 
 ## Installation
 
-The easiest way to install is using npm.
+### browser
+```
+<script src="https://unpkg.com/@hugy/ripple-effect@1.0/dist/browser/index.js"></script>
+```
+
+### Webpack
 
 ```
 npm install @hugy/ripple-effect
@@ -12,16 +17,21 @@ npm install @hugy/ripple-effect
 
 ## Usage
 
-Example
+### Browser
+
+```
+const el = document.getElementById("id");
+const rippleEffect = new window.RippleEffect(el)
+```
+
+### Webpack
 
 ```
 import RippleEffect from "@hugy/ripple-effect"
 
 const el = document.getElementById("id");
 const rippleEffect = new RippleEffect(el);
-
 ```
-
 Note: CSS position of target element must be one of these (relative, absolute, fixed, sticky).
 
 ## properties
